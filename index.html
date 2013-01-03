@@ -2,38 +2,99 @@
 <html>
 <head>
   <title>Bookmarklet Template</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
   <style>
-    * {
-      font-family: sans-serif;
-    }
-
     body {
-      width: 600px;
-      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 40px;
     }
 
-    body h1 {
-      text-decoration: underline;
+    /* Custom container */
+    .container-narrow {
+      margin: 0 auto;
+      max-width: 700px;
     }
+    .container-narrow > hr {
+      margin: 30px 0;
+    }
+
+    /* Main marketing message and sign up button */
+    .jumbotron {
+      margin: 60px 0;
+      text-align: center;
+    }
+    .jumbotron h1 {
+      font-size: 72px;
+      line-height: 1;
+    }
+    .jumbotron .btn {
+      font-size: 21px;
+      padding: 14px 24px;
+    }
+
+    /* Supporting marketing content */
+    .marketing {
+      margin: 60px 0;
+    }
+    .marketing p + h4 {
+      margin-top: 28px;
+    }
+    
   </style>
 </head>
 <body>
-<h1>Bookmarklet Template</h1>
 
-<h2>Instructions</h2>
+<div class="container-narrow">
 
-<p>
-  This bookmarklet is a tiny program that lives inside a browser bookmark.
-  You can add it to your browser like you'd add any ordinary bookmark.
-  And like a bookmark, click it to execute it.
-</p>
+  <div class="masthead">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h3 class="muted">Bookmark template</h3>
+  </div>
 
+  <hr>
 
-<h2>The bookmarklet</h2>
+  <div class="jumbotron">
+    <h2>Super awesome bookmarklet!</h2>
+    <p class="lead">This bookmarklet is a tiny program that lives inside a browser bookmark. You can add it to your browser like you'd add any ordinary bookmark.
+  And like a bookmark, click it to execute it.</p>
+    <p> Drag this to your bookmarks bar: <a class="btn btn-large btn-success bookmarklet" href="#">MyBookmarklet</a></p>
+  </div>
 
-<p>
-  Drag this to your bookmarks bar: <a class="bookmarklet">MyBookmarklet</a>
-</p>
+  <hr>
+
+  <div class="row-fluid marketing">
+    
+  </div>
+  
+  <div class="row">
+    <div class="span4">
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn" href="#">View details »</a></p>
+    </div>
+    <div class="span4">
+      <h2>Heading</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><a class="btn" href="#">View details »</a></p>
+   </div>
+    <div class="span4">
+      <h2>Heading</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <p><a class="btn" href="#">View details »</a></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+    <p>© Company 2012</p>
+  </div>
+
+</div>
 
 <script class="load-script-function" type="text">
   function(url) {
@@ -47,7 +108,7 @@
 </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
 <script>
 
   ///////////////////////////////////////////////////////////////////
